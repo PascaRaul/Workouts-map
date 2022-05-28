@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <script defer src="script.js"></script>
+    <title>Workout || With map</title>
+  </head>
+  <body>
+    <section class="sidebar">
+      <ul class="workouts">
+        <div class="sort_btns">
+          <button class="form__btn sort__desc hide__input">🏃🏻‍♀️⬆</button>
+          <button class="form__btn sort__asc">🏃🏻‍♀️⬇</button>
+          <button class="form__btn sort__date-desc hide__input">📅⬆</button>
+          <button class="form__btn sort__date-asc">📅⬇</button>
+        </div>
+        <form class="form hidden" action="">
+          <div class="form-row">
+            <label class="form__label">Distance</label>
+            <input class="form__input form__input__distance" placeholder="km" />
+          </div>
+          <div class="form-row">
+            <label class="form__label">Duration</label>
+            <input
+              class="form__input form__input__duration"
+              type="number"
+              placeholder="min"
+            />
+          </div>
+          <div class="form-row">
+            <label class="form__label">Steps</label>
+            <input
+              class="form__input form__input__steps"
+              type="number"
+              placeholder="Steps"
+            />
+          </div>
+          <button class="form__btn">ok</button>
+        </form>
+
+        <!-- <li class="workout" data-id="1234567890">
+          <h2 class="workout__header">
+            <span class="name">Running</span> on 12 April
+          </h2>
+          <div class="workout__details">
+            <span class="workout__icon">🏃‍♀️</span>
+            <span class="workout__value workout__distance">12</span>
+            <input class="form__input hide__input" placeholder="km"/>
+            <span class="workout__unit">km</span>
+          </div>
+          <div class="workout__details">
+            <span class="workout__icon">⏲</span>
+            <span class="workout__value">120</span>
+            input class="form__input hide__input" placeholder="min"/>
+            <span class="workout__unit">min</span>
+          </div>
+          <div class="workout__details">
+            <span class="workout__icon">👟</span>
+            <span class="workout__value">8000</span>
+            input class="form__input hide__input" placeholder="steps"/>
+            <span class="workout__unit">steps</span>
+          </div>
+          <div class="workout__details">
+            <span class="workout__icon">🔥</span>
+            <span class="workout__value">500</span>
+            <span class="workout__unit">kcal</span>
+          </div>
+          <button class="form__btn delete_btn">❌</button>
+          <button class="form__btn edit_btn">Edit</button>
+        </li> -->
+      </ul>
+    </section>
+
+    <div id="map"></div>
+  </body>
+</html>
