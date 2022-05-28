@@ -10,6 +10,6 @@
 * edit any workout
 * delete any workout
 * sort ascendent/descendent by steps or sort ascendent/descendent by date
-* workouts are store browser storage (this is a small storage)
+* workouts are stored in the browser storage (this is a small storage)
 
 --New features may be added in the future--
