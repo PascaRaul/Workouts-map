@@ -13,3 +13,4 @@
 * workouts are stored in the browser storage (this is a small storage)
 
 --New features may be added in the future--
+--the app is not fully responsive, for better user experience use laptop/desktop--
